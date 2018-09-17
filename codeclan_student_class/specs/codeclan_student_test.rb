@@ -2,7 +2,7 @@ require('minitest/autorun')
 require('minitest/rg')
 require_relative('../codeclan_student')
 
-class TestBankAccount < MiniTest::Test
+class TestStudent < MiniTest::Test
   def test_name_of_student
     student = Student.new("John", "E25")
     assert_equal("John", student.name)
