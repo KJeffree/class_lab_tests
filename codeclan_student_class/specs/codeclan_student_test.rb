@@ -30,4 +30,9 @@ class TestBankAccount < MiniTest::Test
     assert_equal("I can talk", student.talk)
   end
 
+  def test_fav_language
+    student = Student.new("John", "E25")
+    assert_equal("I Love Ruby!", student.say_fav_language("Ruby") )
+  end
+
 end
